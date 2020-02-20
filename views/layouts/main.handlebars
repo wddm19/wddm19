@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body>
+    <header>
+        <title> {{headingInfo}} </title>
+    </header>
+
+    {{!-- Navigation bar --}}
+    <section class="header">
+        <h1><a href="/"><img src="" alt="logo" class="logo"></a></h1>
+        <nav class="nav">
+          <a href="#" id="menu-toggle">MENU</a>
+          <ul id="toggled">
+            <li><a href="/">Home</a></li>
+            <li><a href="/program">Program</a></li>
+            <li><a href="/student">Student</a></li>
+          </ul>
+        </nav>
+    </section>
+
+    <main>
+        {{body}}
+    </main>
+
+    {{!-- Footer --}}
+    <footer>
+    <!-- Footer Main -->
+        <section class="ft-main">
+            <div class="ft-main-item">
+                <h2 class="ft-title">About Humber</h2>
+                <ul>
+                <li><a href="/program">Program</a></li>
+                <li><a href="#">Admission</a></li>
+                <li><a href="#">Student Life</a></li>
+                <li><a href="#">Global</a></li>
+                </ul>
+            </div>
+
+            <div class="ft-main-item">
+                <h2 class="ft-title">My Humber</h2>
+                <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">News/ Events</a></li>
+                <li><a href="#">Directory</a></li>
+                </ul>
+            </div>
+
+            <div class="ft-main-item">
+                <h2 class="ft-title">Help & FAQs</h2>
+                <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Students Service</a></li>
+                </ul>
+            </div>
+
+            <div class="ft-main-item">
+                <h2 class="ft-title">Stay Updated</h2>
+                <p>Subscribe to our newsletter to get school news and events.</p>
+                <form class="email">
+                <input type="email" name="email" placeholder="Enter email address">
+                <input type="submit" value="Subscribe">
+                </form>
+            </div>
+        </section>
+    
+        <!-- Footer social -->
+        <section class="ft-social">
+            <ul class="ft-social-list">
+                <li><a href="#"><ion-icon name="logo-facebook" class="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter" class="logo-twitter"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-googleplus" class="logo-googleplus"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram" class="logo-instagram"></ion-icon></a></li>
+            </ul>
+        </section>
+    
+        <!-- Footer legal -->
+        <section class="ft-legal">
+            <ul class="ft-legal-list">
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li>&copy; 2020 Copyright.</li>
+            </ul>
+        </section>
+    </footer>
+
+    <script src="/js/index.js"></script>
+</body>
+</html>
