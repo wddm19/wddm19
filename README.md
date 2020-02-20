@@ -1,11 +1,69 @@
 # Humber Media Pros
+Humber Media Programs website will be built using the SPA framework. 
 
-## Group
+# Table of Content
+1. [ Group. ](#group)
+2. [ Install. ](#install)
+3. [ Usage. ](#usage)
+4. [ Documentation. ](#documentation)
+5. [ Contributing. ](#contributing)
+6. [ Submitting an Issue. ](#submitting-issue)
+7. [ Cleaning up issues. ](#cleaning-issue)
+8. [ Submitting a Pull Request. ](#pull)
+9. [ Layout Pages. ](#layout)
+10. [ General Design System. ](#design)
+
+## 1. <a name="group"/>Group
 - Maftuna [(@maftuna-cs)](http://github.com/maftuna-cs)
 - Hailey  [(@haileykoo)](https://github.com/haileykoo)
+- Clara
 
-## Maftuna's Stuff
+### Maftuna's Stuff
+- Overall Design
+- Homepage
 
-## Clara's Stuff
+### Clara's Stuff
+- Student page
 
-## Hailey's Stuff
+### Hailey's Stuff
+- Updated ReadMe
+- Build router
+- Program page
+
+## 2. <a name="install"/>Install
+```sh
+npm install express
+```
+
+## 3. <a name="usage"/>Usage
+- Screenshots of the website will be included here.
+
+## 4. <a name="documentation"/>Documentation
+- All work must be done in own branches
+- All communication must go through Issues
+- Issues must be managed by Open, Comment, Close
+
+## 5. <a name="contributing"/>Contributing
+- 
+## 6. <a name="submitting-issue"/>Submitting an Issue
+- We use the [GitHub issue tracker](https://github.com/wddm19/framework_project/issues) to track bugs and features.
+- Before submitting a bug report or feature request, check to make sure it hasn't
+already been submitted.
+
+## 7. <a name="cleaning-issue"/>Cleaning up issues
+- When close an issue, please leave comment
+
+## 8. <a name="pull"/>Submitting a Pull Request
+1. Create Issue
+- Assign it to yourself
+- Add appropriate label to the issue
+2. Commit Change
+- Create a new branch for the commit
+- Use commit message to close number
+- Submit a [pull request](https://help.github.com/articles/using-pull-requests/).
+
+## 9. <a name="layout"/>Layout Pages
+- Links to wireframes for each page will be added here
+
+## 10. <a name="design"/>General Design System
+- color, font, logo, etc will be described here
