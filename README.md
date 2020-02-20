@@ -1,7 +1,8 @@
 # Humber Media Pros
 
 ## Group
-- Hailey ([@haileykoo]) (https://github.com/haileykoo))
+- Maftuna [(@maftuna-cs)](http://github.com/maftuna-cs)
+- Hailey  [(@haileykoo)](https://github.com/haileykoo)
 
 ## Maftuna's Stuff
 
