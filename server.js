@@ -18,8 +18,27 @@ app.use(express.static('public'));
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
+
+// HTML
+const htmlTemplate = section => `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> ${section.title} </title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    ${section.html}
+</body>
+</html>
+`
+
 //Setting up router
-app.get("/home", (req,res) => {
+app.get("/", (req,res) => {
     
     res.render("home", {
         title:"Home",
@@ -33,7 +52,7 @@ app.get("/program", (req,res) => {
     res.render("program", {
         title:"Program",
         headingInfo: "Media Program Page",
-        listings: listings
+        dynamicContent: "something"
     });
 })
 
