@@ -5,6 +5,9 @@ const express = require("express");
 const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');    
 
+// Import DB
+const programModel = require("./models/programs");
+
 //create express app object
 const app = express();
 
@@ -52,7 +55,8 @@ app.get("/program", (req,res) => {
     res.render("program", {
         title:"Program",
         headingInfo: "Media Program Page",
-        dynamicContent: "something"
+        dynamicContent: "something",
+        programs: programModel.getallPrograms()
     });
 })
 

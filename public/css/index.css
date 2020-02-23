@@ -9,6 +9,7 @@
   --color-mint: #cf9e76;
   --color-background: #cf9e76;
   --color-lightkhaki: #cf9e76;
+  --color-blue: rgb(48, 55, 185);
 }
 
 body {
@@ -228,4 +229,72 @@ footer {
   /* one before the last child */
   .ft-legal-list li:nth-last-child(2) {
 	  flex: 1;
+  }
+
+
+  /* Program page - Hailey */
+  .title {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.unsplash.com/photo-1497015289639-54688650d173?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.unsplash.com/photo-1497015289639-54688650d173?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 30vh;
+    background-attachment: fixed;
+    margin: 0;
+    color: var(--color-white);
+    text-align: center;
+    font-size: 3em;
+  }
+
+  .course-img {
+    height: 20vh;
+    width: 100%;
+  }
+
+  .program-title-container, .apply-btn{
+    margin: 0;
+    padding: 0.5em 0.5em;
+    text-align: center;
+  }
+  
+  .program-title {
+    color: var(--color-blue);
+  }
+
+  .program-start {
+    color: var(--color-blue);
+    font-size: 1em;
+  }
+
+  .program-info {
+    margin: 0 5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    border-top: solid 1px #1c1818;
+  }
+
+  .btn {
+    background-color: var(--color-blue);
+    border: solid 1px white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .program-about-title {
+    font-size: 1.5em;
+    border-top: solid 2px var(--color-blue)
+  }
+
+  .program-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
   }
