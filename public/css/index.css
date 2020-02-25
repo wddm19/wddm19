@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
 
 :root {
-  --color-beige: #cf9e76;
+  --color-blue: #2B415C;
   --middlecolor: #959a8f;
   --color-white: #f7f7f7;
   --color-babypink: #f6abab;
   --color-mint: #cf9e76;
   --color-background: #cf9e76;
   --color-lightkhaki: #cf9e76;
-  --color-blue: rgb(48, 55, 185);
+  
 }
 
 body {
@@ -29,7 +29,7 @@ body {
 
 .header {
     position: relative;
-    background-color: #464655;
+    background-color: var(--color-blue);
     overflow: hidden;
     min-width: 21.875em;
     }
@@ -68,7 +68,7 @@ body {
   } 
 
  .logo { 
-  width: 8.125em;
+  width: 6.125em;
   padding-left: .5em;
   margin-left: 3em;
 }
@@ -229,6 +229,37 @@ footer {
   /* one before the last child */
   .ft-legal-list li:nth-last-child(2) {
 	  flex: 1;
+  }
+
+
+  /* Home Page - Maftuna */
+
+  .header-container {
+    position: relative;
+    color: #21497a;
+  }
+
+  .background-overlay {
+    background-image: url("/img/banner-03.png");
+    height: 200px;
+    color: var(--color-white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 30px 150px;
+  }
+
+  .header-container h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+
+  .main-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
 
