@@ -234,26 +234,56 @@ footer {
 
   /* Home Page - Maftuna */
 
-  .header-container {
-    position: relative;
-    color: #21497a;
-  }
-
   .background-overlay {
-    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(250, 250, 248, 0.50)),url("/img/banner-03.png");
-    height: 200px;
-    color: #21416c;
+    background-image: linear-gradient(to bottom, rgba(251, 252, 245, 0.52), rgba(241, 198, 55, 0.73)),url("/img/banner-05.png");
+    height: 400px;
+    color: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     text-align: center;
     padding: 30px 150px;
   }
-
-  .main-heading {
+  
+  .header-container {
+    position: relative;
     text-align: center;
-    font-size: 2em;
-    padding: 4em;
+    color: #797878;
+  }
+  
+  .main-heading {
+    position: absolute;
+    top: 4.5em;
+    left: 1.5em;
+  }
+  
+  .main-heading > h1 {
+    position: relative;
+  }
+  
+  .main-heading > h1::before {
+    content: '';
+    position: absolute;
+    left: 50;
+    bottom: 0;
+    width: 12em;;
+    border-bottom: 1px solid;
+  }
+  
+  .main-heading > h1 > strong {
+    color: white;
+    font-size: 2.8em;
+    font-family: 'Anton';
+    letter-spacing: .05em;
+    margin-top: 1em;
+  
+  }
+  
+  .main-heading > h1 > span  {
+    color: #797878;
+    font-size: 2.8em;
+    font-family: 'Anton';
+    letter-spacing: .05em;
   }
 
   .box {
@@ -285,16 +315,12 @@ footer {
   
   .box-btn {
     text-align: center;
-    background: #ccc;
+    color: #fff;
+    background: #F5B944;
     display: inline-block;
     position: relative;
     text-transform: uppercase;
     margin: 25px;
-  }
-  
-  .box-btn{
-    background: #F5B944;
-    color: #fff;
   }
   
   .box-btn--txt {
@@ -304,7 +330,24 @@ footer {
   }
 
   @media screen and (min-width: 41.25em) {
-  .box-container {
+    .background-overlay {
+      background-image: url("/img/banner-05.png");
+    }
+
+    .header-container {
+      text-align: left;;
+    }
+
+    .main-heading > h1::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 10em;;
+      border-bottom: 1px solid;
+    }
+    
+    .box-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
