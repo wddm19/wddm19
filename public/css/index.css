@@ -29,7 +29,7 @@ body {
 
 .header {
     position: relative;
-    background-color: var(--color-blue);
+    background-color: #797878;
     overflow: hidden;
     min-width: 21.875em;
     }
@@ -240,9 +240,9 @@ footer {
   }
 
   .background-overlay {
-    background-image: url("/img/banner-03.png");
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(250, 250, 248, 0.50)),url("/img/banner-03.png");
     height: 200px;
-    color: var(--color-white);
+    color: #21416c;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -250,17 +250,70 @@ footer {
     padding: 30px 150px;
   }
 
-  .header-container h1 {
+  .main-heading {
+    text-align: center;
     font-size: 2em;
-    text-transform: uppercase;
+    padding: 4em;
   }
 
-  .main-heading {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .box {
+    background-color: #fff;
+    padding: 0 1em;
+    overflow: hidden;
+    box-shadow: 0 0 1em rgba(0,0,0,0.4);
+    position: relative;
+    text-align: center;
+    border-radius: .3em;
+    top: 0;
   }
+  
+  .box-img {
+    width:100%;
+    margin-top: 1em;
+  }
+  
+  .box h2 {
+    color: #F5B944;
+  }
+  
+  .style-under {
+    background-color: #F5B944;
+    height: .125em;
+    margin: 1em auto;
+    width: 1.6em;
+  }
+  
+  .box-btn {
+    text-align: center;
+    background: #ccc;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    margin: 25px;
+  }
+  
+  .box-btn{
+    background: #F5B944;
+    color: #fff;
+  }
+  
+  .box-btn--txt {
+    padding: 0 25px;
+    line-height: 56px;
+    letter-spacing: 0.1em;
+  }
+
+  @media screen and (min-width: 41.25em) {
+  .box-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    margin-bottom: 4em;
+  } 
+  .box {
+    margin-bottom: 4em;
+  }
+}
 
 
   /* Program page - Hailey */
