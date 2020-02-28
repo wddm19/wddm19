@@ -352,6 +352,64 @@ footer {
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   }
 
+   /* AREAS OF STUDY */
+
+
+
+  /* PROGRAM OPTIONS */
+
+  .options-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    margin: 2em;
+  }
+  
+  .options-drpdown {
+    background-color: #F5B944;
+    color: #777;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .active, .options-drpdown:hover {
+    background-color: #ccc;
+  }
+  
+  .options-drpdown:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .panel > ul > li > a{
+    color: #615e5e;
+  }
+
+  /* PROGRAM OPTIONS */
+
   .box {
     background-color: #fff;
     padding: 0 1em;
@@ -432,6 +490,15 @@ footer {
 
     .prg-title {
       font-size: 3em;
+    }
+
+    /* PROGRAM OPTIONS */
+
+    .options-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 1em;
+      margin: 2em;
     }
 
 
