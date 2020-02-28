@@ -13,17 +13,17 @@
 }
 
 body {
-  font-family: 'tt_norms',Arial,Helvetica,sans-serif;   
+  /* font-family: 'tt_norms',Arial,Helvetica,sans-serif;    */
+  font-family: 'Montserrat',sans-serif;
   font-style: normal;    
   font-weight: 400;   
   font-size: 1em;   
   line-height: 1.5;
   background: var(--color-white);    
-  color: #1c1818;
+  color: #615e5e;
   background-color: var(--color-white);
   }
   a {
-    color: var(--color-white);
     text-decoration: none;
   } 
 
@@ -32,7 +32,12 @@ body {
     background-color: #797878;
     overflow: hidden;
     min-width: 21.875em;
-    }
+}
+
+.header a {
+  color: var(--color-white);
+}
+
   
 .header h1 {
     float: left;
@@ -121,7 +126,7 @@ footer {
   body {
 	display: flex;
 	min-height: 100vh;
-	flex-direction: column;
+  flex-direction: column;
   }
   .container {
 	flex: 1;
@@ -286,6 +291,67 @@ footer {
     letter-spacing: .05em;
   }
 
+  /* AREAS OF STUDY */
+
+  .prg {
+    background: #ededed;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 1em;
+  }
+  
+  .prg-title {
+    color: #F5B944;
+    font-weight: bold;
+    font-size: 2em;
+  
+  }
+  
+  .prg-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .prg-icon {
+    width: 120px;
+    height: 120px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+  
+  .prg-icon:hover {
+    transform: translateY(-7px);
+  }
+  
+  .prg-p {
+    font-size: .8em;
+    text-transform: uppercase;
+    color: #615e5e;
+  }
+  
+  .divider {
+    background-color: #615e5e;
+    height: .2em;
+    margin: .5em auto;
+    width: 4em;
+  }
+  
+  .prg-btn {
+    background: #F5B944;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 1.2em;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    transition: 0.3s all ease-in-out;
+    text-transform: uppercase;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+
   .box {
     background-color: #fff;
     padding: 0 1em;
@@ -347,6 +413,28 @@ footer {
       border-bottom: 1px solid;
     }
     
+
+    /* AREAS OF STUDY */
+
+    .prg-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .prg-icon {
+      width: 160px;
+      height: 160px;
+    }
+
+    .prg-p {
+      font-size: 1.2em;
+    }
+
+    .prg-title {
+      font-size: 3em;
+    }
+
+
     .box-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
