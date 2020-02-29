@@ -291,6 +291,36 @@ footer {
     letter-spacing: .05em;
   }
 
+  /* START DATE */
+
+  .start-day {
+    background: #797878;
+    padding: 20px 0 30px;
+    text-align: center;
+    border-bottom: 8px solid #fff;
+    position: relative;
+  }
+  
+  .start-day::before {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    content: '';
+    border: inset 15px;
+    border-top-width: 0;
+    border-bottom-style: solid;
+    border-color: transparent transparent #fff;
+  }
+  
+  .start-day p {
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+
+/* START DATE */
+
   /* AREAS OF STUDY */
 
   .prg {
