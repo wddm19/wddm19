@@ -215,7 +215,7 @@ footer {
   .ft-legal {
 	  padding: 0.9375rem 1.875rem;
 	  background-color: #f7f7f7;
-	color: #1c1818;
+	  color: #1c1818;
   }
   
   .ft-legal a {
@@ -362,7 +362,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1em;
-    margin: 2em;
+    margin: 3em;
   }
   
   .options-drpdown {
@@ -401,11 +401,16 @@ footer {
     background-color: white;
     max-height: 0;
     overflow: hidden;
+    text-align: left;
     transition: max-height 0.2s ease-out;
   }
 
   .panel > ul > li > a{
     color: #615e5e;
+  }
+
+  .panel > ul {
+    list-style: square outside none;
   }
 
   /* PROGRAM OPTIONS */
@@ -480,48 +485,126 @@ footer {
 
 /* ABOUT */
 
-  .box {
-    background-color: #fff;
-    padding: 0 1em;
-    overflow: hidden;
-    box-shadow: 0 0 1em rgba(0,0,0,0.4);
-    position: relative;
-    text-align: center;
-    border-radius: .3em;
-    top: 0;
-  }
+/* INFO BOX */
+
+.box-container {
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+
+.box {
+  background-color: #fff;
+  padding: 0 1em;
+  overflow: hidden;
+  box-shadow: 0 0 1em rgba(0,0,0,0.4);
+  position: relative;
+  text-align: center;
+  border-radius: .3em;
+  top: 0;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  margin-bottom: 2em;
+}
+
+.box:hover {
+  transform: translateY(-7px);
+}
+
+.box-img {
+  width:100%;
+  margin-top: 1em;
+}
+
+
+.box h2 {
+  color: #F5B944;
+}
+
+.style-under {
   
-  .box-img {
-    width:100%;
-    margin-top: 1em;
-  }
-  
-  .box h2 {
-    color: #F5B944;
-  }
-  
-  .style-under {
-    background-color: #F5B944;
-    height: .125em;
-    margin: 1em auto;
-    width: 1.6em;
-  }
-  
-  .box-btn {
-    text-align: center;
-    color: #fff;
-    background: #F5B944;
-    display: inline-block;
-    position: relative;
-    text-transform: uppercase;
-    margin: 25px;
-  }
-  
-  .box-btn--txt {
-    padding: 0 25px;
-    line-height: 56px;
-    letter-spacing: 0.1em;
-  }
+  background-color: #F5B944;
+  height: .125em;
+  margin: 1em auto;
+  width: 1.6em;
+}
+
+.box-btn {
+  text-align: center;
+  background: #ccc;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  margin: 25px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.box-btn{
+  background: #F5B944;
+  color: #fff;
+}
+
+.box-btn--txt {
+  padding: 0 25px;
+  line-height: 56px;
+  letter-spacing: 0.1em;
+}
+
+/* INFO BOX */
+
+/* GALLERY - STUDENT WORKS */
+
+.gallery h3 {
+  position: relative;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.gallery-title {
+  font-size: .8em;
+}
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+}
+.item:hover {
+  flex: 7;
+}
+
+.item-1 {
+  background-image: url("https://i.pinimg.com/564x/e1/3a/d6/e13ad6a5534623ff7016b7f5200ee5ad.jpg");
+}
+
+.item-2 {
+  background-image: url("https://i.pinimg.com/originals/1e/89/bb/1e89bba8327799e1f93fcb63d4f5db1d.gif");
+}
+
+.item-3 {
+  background-image: url("https://i.pinimg.com/originals/e5/6e/3e/e56e3e2335e5f4745c32c18fa5cc087c.gif");
+}
+
+.item-4 {
+  background-image: url("https://i.pinimg.com/originals/ca/eb/1d/caeb1d61f01288df55fbdb1f6f4ae990.gif");
+}
+
+.item-5 {
+  background-image: url("https://i.pinimg.com/564x/83/af/77/83af773ff7ec66354e5b18863667c0b3.jpg");
+}
+
+
+
 
   @media screen and (min-width: 41.25em) {
     .background-overlay {
@@ -529,7 +612,7 @@ footer {
     }
 
     .header-container {
-      text-align: left;;
+      text-align: left;
     }
 
     .main-heading > h1::before {
@@ -568,8 +651,9 @@ footer {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-gap: 1em;
-      margin: 2em;
+      margin: 4em;
     }
+
 
     /* ABOUT */
 
@@ -578,15 +662,18 @@ footer {
     }
 
 
+  /* INFO BOX */
 
-    .box-container {
+   .box-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
     margin-bottom: 4em;
+    margin-left: 2em;
+    margin-right: 2em;
   } 
   .box {
-    margin-bottom: 4em;
+    margin-bottom: 0;
   }
 }
 
