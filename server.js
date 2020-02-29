@@ -49,6 +49,7 @@ app.get("/", (req,res) => {
         headingInfo: "Home page",
         dynamicContent: "something",
         info: infoModel.getallInfo()
+
     });
 })
 

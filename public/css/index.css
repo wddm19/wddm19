@@ -291,6 +291,13 @@ footer {
     letter-spacing: .05em;
   }
 
+  .fixed-icon {
+    position: fixed;
+    bottom: 10px;
+    left: 10px; 
+    color: #F5B944;
+  }
+
   /* START DATE */
 
   .start-day {
@@ -316,7 +323,7 @@ footer {
   .start-day p {
     color: white;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1em;
   }
 
 /* START DATE */
@@ -652,6 +659,10 @@ footer {
       bottom: 0;
       width: 10em;;
       border-bottom: 1px solid;
+    }
+
+    .start-day p {
+      font-size: 1.3em;
     }
     
 
