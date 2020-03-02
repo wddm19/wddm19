@@ -2,37 +2,42 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
 
 :root {
-  --color-beige: #cf9e76;
+  --color-blue: #2B415C;
   --middlecolor: #959a8f;
   --color-white: #f7f7f7;
   --color-babypink: #f6abab;
   --color-mint: #cf9e76;
   --color-background: #cf9e76;
   --color-lightkhaki: #cf9e76;
-  --color-blue: rgb(48, 55, 185);
+  
 }
 
 body {
-  font-family: 'tt_norms',Arial,Helvetica,sans-serif;   
+  /* font-family: 'tt_norms',Arial,Helvetica,sans-serif;    */
+  font-family: 'Montserrat',sans-serif;
   font-style: normal;    
   font-weight: 400;   
   font-size: 1em;   
   line-height: 1.5;
   background: var(--color-white);    
-  color: #1c1818;
+  color: #615e5e;
   background-color: var(--color-white);
   }
   a {
-    color: var(--color-white);
     text-decoration: none;
   } 
 
 .header {
     position: relative;
-    background-color: #464655;
+    background-color: #797878;
     overflow: hidden;
     min-width: 21.875em;
-    }
+}
+
+.header a {
+  color: var(--color-white);
+}
+
   
 .header h1 {
     float: left;
@@ -68,7 +73,7 @@ body {
   } 
 
  .logo { 
-  width: 8.125em;
+  width: 6.125em;
   padding-left: .5em;
   margin-left: 3em;
 }
@@ -121,7 +126,7 @@ footer {
   body {
 	display: flex;
 	min-height: 100vh;
-	flex-direction: column;
+  flex-direction: column;
   }
   .container {
 	flex: 1;
@@ -201,7 +206,7 @@ footer {
   .ft-legal {
 	  padding: 0.9375rem 1.875rem;
 	  background-color: #f7f7f7;
-	color: #1c1818;
+	  color: #1c1818;
   }
   
   .ft-legal a {
@@ -221,6 +226,488 @@ footer {
   .ft-legal-list li:nth-last-child(2) {
 	  flex: 1;
   }
+
+
+  /* Home Page - Maftuna */
+
+  .background-overlay {
+    background-image: linear-gradient(to bottom, rgba(251, 252, 245, 0.52), rgba(241, 198, 55, 0.73)),url("/img/banner-05.png");
+    height: 400px;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 30px 150px;
+  }
+  
+  .header-container {
+    position: relative;
+    text-align: center;
+    color: #797878;
+  }
+  
+  .main-heading {
+    position: absolute;
+    top: 4.5em;
+    left: 1.5em;
+  }
+  
+  .main-heading > h1 {
+    position: relative;
+  }
+  
+  .main-heading > h1::before {
+    content: '';
+    position: absolute;
+    left: 50;
+    bottom: 0;
+    width: 12em;;
+    border-bottom: 1px solid;
+  }
+  
+  .main-heading > h1 > strong {
+    color: white;
+    font-size: 2.8em;
+    font-family: 'Anton';
+    letter-spacing: .05em;
+    margin-top: 1em;
+  
+  }
+  
+  .main-heading > h1 > span  {
+    color: #797878;
+    font-size: 2.8em;
+    font-family: 'Anton';
+    letter-spacing: .05em;
+  }
+
+  .fixed-icon {
+    position: fixed;
+    bottom: 10px;
+    left: 10px; 
+    color: #F5B944;
+  }
+
+  /* START DATE */
+
+  .start-day {
+    background: #797878;
+    padding: 20px 0 30px;
+    text-align: center;
+    border-bottom: 8px solid #fff;
+    position: relative;
+  }
+  
+  .start-day::before {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    content: '';
+    border: inset 15px;
+    border-top-width: 0;
+    border-bottom-style: solid;
+    border-color: transparent transparent #fff;
+  }
+  
+  .start-day p {
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+  }
+
+/* START DATE */
+
+  /* AREAS OF STUDY */
+
+  .prg {
+    background: #ededed;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 1em;
+  }
+  
+  .prg-title {
+    color: #F5B944;
+    font-weight: bold;
+    font-size: 2em;
+  
+  }
+  
+  .prg-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .prg-icon {
+    width: 120px;
+    height: 120px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+  
+  .prg-icon:hover {
+    transform: translateY(-7px);
+  }
+  
+  .prg-p {
+    font-size: .8em;
+    text-transform: uppercase;
+    color: #615e5e;
+  }
+  
+  .divider {
+    background-color: #615e5e;
+    height: .2em;
+    margin: .5em auto;
+    width: 4em;
+  }
+  
+  .prg-btn {
+    background: #F5B944;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 1.2em;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    transition: 0.3s all ease-in-out;
+    text-transform: uppercase;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+
+   /* AREAS OF STUDY */
+
+
+
+  /* PROGRAM OPTIONS */
+
+  .options-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    margin: 3em;
+  }
+  
+  .options-drpdown {
+    background-color: #F5B944;
+    color: #777;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .active, .options-drpdown:hover {
+    background-color: #ccc;
+  }
+  
+  .options-drpdown:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    text-align: left;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .panel > ul > li > a{
+    color: #615e5e;
+  }
+
+  .panel > ul {
+    list-style: square outside none;
+  }
+
+  /* PROGRAM OPTIONS */
+
+  /* ABOUT */
+
+
+.about {
+  text-align: center;
+  font-style: normal;
+  margin-bottom: 4em;
+}
+
+.about-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.about > div >h3 {
+  font-size: 1.6em;
+  margin-bottom: 1.8em;
+}
+
+.about-drm {
+  color: #f58026;
+}
+
+.about-cre {
+  color: #67a2b9;
+}
+
+.about-insp {
+  color: #F5B944;
+}
+
+.about-p {
+  background-image: linear-gradient(#e7b52ad0, #6d6c6c, transparent),url("https://images.unsplash.com/photo-1556761175-129418cb2dfe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80");
+  min-height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background 0.5s, border 0.3s, border-radius 0.3s, box-shadow 0.5s;
+  padding: 40px;
+  color: white;
+}
+
+
+.about-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 1em;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: 0.3s all ease-in-out;
+  text-transform: uppercase;
+}
+
+.about-btn:hover, .prg-btn:hover {
+  border-radius: .8em;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  color: #615e5e;
+  background: white;
+}
+
+/* ABOUT */
+
+/* INFO BOX */
+
+.box-container {
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+
+.box {
+  background-color: #fff;
+  padding: 0 1em;
+  overflow: hidden;
+  box-shadow: 0 0 1em rgba(0,0,0,0.4);
+  position: relative;
+  text-align: center;
+  border-radius: .3em;
+  top: 0;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  margin-bottom: 2em;
+}
+
+.box:hover {
+  transform: translateY(-7px);
+}
+
+.box-img {
+  width:100%;
+  margin-top: 1em;
+}
+
+
+.box h2 {
+  color: #F5B944;
+}
+
+.style-under {
+  
+  background-color: #F5B944;
+  height: .125em;
+  margin: 1em auto;
+  width: 1.6em;
+}
+
+.box-btn {
+  text-align: center;
+  background: #ccc;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  margin: 25px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.box-btn{
+  background: #F5B944;
+  color: #fff;
+}
+
+.box-btn--txt {
+  padding: 0 25px;
+  line-height: 56px;
+  letter-spacing: 0.1em;
+}
+
+/* INFO BOX */
+
+/* GALLERY - STUDENT WORKS */
+
+.gallery h3 {
+  position: relative;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.gallery-title {
+  font-size: .8em;
+}
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+}
+.item:hover {
+  flex: 7;
+}
+
+.item-1 {
+  background-image: url("https://i.pinimg.com/564x/e1/3a/d6/e13ad6a5534623ff7016b7f5200ee5ad.jpg");
+}
+
+.item-2 {
+  background-image: url("https://i.pinimg.com/originals/1e/89/bb/1e89bba8327799e1f93fcb63d4f5db1d.gif");
+}
+
+.item-3 {
+  background-image: url("https://i.pinimg.com/originals/e5/6e/3e/e56e3e2335e5f4745c32c18fa5cc087c.gif");
+}
+
+.item-4 {
+  background-image: url("https://i.pinimg.com/originals/ca/eb/1d/caeb1d61f01288df55fbdb1f6f4ae990.gif");
+}
+
+.item-5 {
+  background-image: url("https://i.pinimg.com/564x/83/af/77/83af773ff7ec66354e5b18863667c0b3.jpg");
+}
+
+
+
+
+  @media screen and (min-width: 41.25em) {
+    .background-overlay {
+      background-image: url("/img/banner-05.png");
+    }
+
+    .header-container {
+      text-align: left;
+    }
+
+    .main-heading > h1::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 10em;;
+      border-bottom: 1px solid;
+    }
+
+    .start-day p {
+      font-size: 1.3em;
+    }
+    
+
+    /* AREAS OF STUDY */
+
+    .prg-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .prg-icon {
+      width: 160px;
+      height: 160px;
+    }
+
+    .prg-p {
+      font-size: 1.2em;
+    }
+
+    .prg-title {
+      font-size: 3em;
+    }
+
+    /* PROGRAM OPTIONS */
+
+    .options-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 1em;
+      margin: 4em;
+    }
+
+
+    /* ABOUT */
+
+    .about-title {
+      font-size: 1.8em;
+    }
+
+
+  /* INFO BOX */
+
+   .box-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    margin-bottom: 4em;
+    margin-left: 2em;
+    margin-right: 2em;
+  } 
+  .box {
+    margin-bottom: 0;
+  }
+}
 
 
   /* Program page - Hailey */

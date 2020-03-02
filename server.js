@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 
 // Import DB
 const programModel = require("./models/programs");
+const infoModel = require("./models/home");
 
 //create express app object
 const app = express();
@@ -46,7 +47,9 @@ app.get("/", (req,res) => {
     res.render("home", {
         title:"Home",
         headingInfo: "Home page",
-        dynamicContent: "something"
+        dynamicContent: "something",
+        info: infoModel.getallInfo()
+
     });
 })
 
