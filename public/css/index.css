@@ -138,16 +138,7 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
   }
-  @media only screen and (min-width: 29.8125rem /* 477px */) {
-	.ft-main {
-	  justify-content: space-evenly;
-	}
-  }
-  @media only screen and (min-width: 77.5rem /* 1240px */) {
-	.ft-main {
-	  justify-content: space-evenly;
-	}
-  }
+  
   .ft-main-item {
 	padding: 1.25rem;
 	min-width: 12.5rem;
@@ -720,15 +711,27 @@ footer {
 
 
   /* Program page - Hailey */
+  .program-btn {
+    background-color: var(--color-blue);
+    color: white;
+    width: 100%;
+    padding: 1em 1em;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
   .title {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.unsplash.com/photo-1497015289639-54688650d173?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.unsplash.com/photo-1497015289639-54688650d173?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80);
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 30vh;
+    height: 50vh;
     background-attachment: fixed;
     margin: 0;
+    padding-top: 1em;
     color: var(--color-white);
     text-align: center;
     font-size: 3em;
@@ -747,11 +750,20 @@ footer {
   
   .program-title {
     color: var(--color-blue);
+    margin: 1em 0em 0.5em 0;
+    font-size: 1.5em;
   }
 
   .program-start {
-    color: var(--color-blue);
+    color: #1c1818;
     font-size: 1em;
+    margin: 1em 0;
+  }
+
+  .info-title {
+    font-size: 1.2em;
+    font-weight: 100;
+    margin-bottom: 0.5em;
   }
 
   .program-info {
@@ -771,17 +783,45 @@ footer {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
+    margin: 1em 0;
   }
 
   .program-about-title {
     font-size: 1.5em;
-    border-top: solid 2px var(--color-blue)
+    border-top: solid 2px var(--color-blue);
+    margin-bottom: 0.5em;
   }
 
   .program-about {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+    margin: 2em 2em;
   }
+
+
+  @media only screen and (max-width: 40em) {
+    .program-about {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .program-info {
+      margin: 0 5em;
+      display: grid;
+      grid-template-columns: 1fr;
+      border-top: solid 1px #1c1818;
+      text-align: center;
+    }
+
+    .ft-main {
+      justify-content: space-evenly;
+      font-size: 0.7em;
+    }
+
+    .ft-title {
+      font-size: 1.3em;
+    }
+  }
+
+  
