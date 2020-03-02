@@ -813,78 +813,8 @@ footer {
     }
   }
 
-<<<<<<< HEAD
 
-  /* Studen Page */
 
-  .profile {
-    position: relative;
-    background: var(--backgroundColor);
-    color: var(--foregroundColor);
-    box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
-    border-radius: 10px;
-    transition: .2s ease;
-  }
-  
-  .profile-smallimg {
-    width: 300px;
-    border-radius: 10px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    text-align: center;
-  }
-  .profile-smallimg .profile__image {
-    margin-top: -40px;
-  }
-  .profile-smallimg .profile__image img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 5px solid white;
-    box-shadow: 0 0 0 7px #F5B944; /* secondary color */
-  }
-  .profile-smallimg .profile__info {
-    margin: 10px 30px 15px;
-  }
-  .profile-smallimg .profile__stats {
-    margin: 0 30px 10px;
-  }
-  .profile-smallimg .profile__stats:nth-of-type(n+4) {
-    display: none;
-  }
-  .profile-smallimg .profile__cta a {
-    border-radius: 0 0 10px 10px;
-  }
-  .button {
-    outline: none;
-    text-align: center;
-    display: inline-block;
-    border: none;
-    font: 500 16px/1 "Poppins", sans-serif;
-    padding: 20px;
-    cursor: pointer;
-    border-radius: var(--borderRadius);
-    background: #F5B944;
-    color: var(--backgroundColor);
-    position: relative;
-    top: 0;
-    transition: 0.2s ease;
-  }
-  .button:hover, a.button.hover {
-    top: -3px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  }
-  .button:active, a.button.active {
-    background: #F5B944;
-    outline: none;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-    top: 0;
-  }
-  
-
-=======
     /*  Student Page - Clara */
 
   .student-header {
