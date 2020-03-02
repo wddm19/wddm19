@@ -840,14 +840,21 @@ footer {
   }
 
   .student-essentials {
-    margin: 2em;
+    padding: 2em;
+    background-color: var(--color-white);
+  }
+
+  .student-essentials h2 {
+    font-size: 1.5em;
+    padding: 1em 0;
+    margin-top: 1em;
   }
 
   .student-schedule ol, .assignments ol, .grades ol, .materials {
-    margin: 2em;
+    padding: 2em;
   }
 
-  ol {
+  .student-essentials ol {
     background-color: white;
   }
 
