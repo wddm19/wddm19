@@ -1,0 +1,64 @@
+<h1 class="title"> MEDIA &amp; CREATIVE ARTS PROGRAMS</h1>
+
+{{!-- Btn to select program --}}
+{{!-- <div class="program-btn">
+    <form id="program">
+    <label>Programs</label> <br>
+    <input type="radio" name="program" id="act" class="program_btn" value="act">
+    <label for="act">Acting for Film and Television</label><br>
+    <input type="radio" name="program" id="animation" class="program_btn" value="animation">
+    <label for="animation">Animation - 3D</label><br>
+    <input type="radio" name="program" id="3d" class="program_btn" value="3d">
+    <label for="3d">3D Modelling and Visual Effects Production</label><br>
+    </form>
+</div> --}}
+
+<section>
+{{#each programs}}
+ <div class="program-title-container">
+     <h1 class="program-title">{{this.title}}</h1>
+     <p class="program-start">Starts in {{this.start}}</p>
+ </div>
+
+ <div class="program-info">
+     <div>
+         <p class="info-title">Location</p>
+         <p class="info-content"> Humber@{{this.location}}</p>
+     </div>
+     <div>
+        <p class="info-title">Duration</p>
+        <p class="info-content">{{this.lenght}} Semesters</p>
+    </div>
+    <div>
+        <p class="info-title">Credential Awarded</p>
+        <p class="info-content">{{this.credential}}</p>
+    </div>
+    <div>
+        <p class="info-title">Program Code</p>
+        <p class="info-content">{{this.code}}</p>
+    </div>
+ </div>
+
+<div class="apply-btn">
+    <button class="btn">Apply</button>
+</div>
+
+<section class="program-about">
+    <div>
+        <h3 class="program-about-title">About the Program</h3>
+        <p>{{this.description}}</p>
+    </div>
+
+    <div>
+        <h3 class="program-about-title">Skills</h3>
+        <p>Throughout this program you will develop the following skills:{{this.skills}}</p>
+    </div>
+
+    <div>
+        <h3 class="program-about-title">Career</h3>
+        <p>{{this.career}}</p>
+    </div>
+</section>
+
+{{/each}}
+</section>
