@@ -16,7 +16,7 @@ Humber Media Programs website will be built using the SPA framework.
 ## 1. <a name="group"/>Group
 - Maftuna [(@maftuna-cs)](http://github.com/maftuna-cs)
 - Hailey  [(@haileykoo)](https://github.com/haileykoo)
-- Clara
+- Clara [(@clarakhast)](https://github.com/clarakhast)
 
 ### Maftuna's Stuff
 - Overall Design
@@ -44,7 +44,10 @@ npm install express
 - Issues must be managed by Open, Comment, Close
 
 ## 5. <a name="contributing"/>Contributing
-- 
+- Maftuna - design, color, Home page
+- Hailey - documentation, program page
+- Clara - student page
+
 ## 6. <a name="submitting-issue"/>Submitting an Issue
 - We use the [GitHub issue tracker](https://github.com/wddm19/framework_project/issues) to track bugs and features.
 - Before submitting a bug report or feature request, check to make sure it hasn't
@@ -63,7 +66,8 @@ already been submitted.
 - Submit a [pull request](https://help.github.com/articles/using-pull-requests/).
 
 ## 9. <a name="layout"/>Layout Pages
-- Links to wireframes for each page will be added here
+- Program Page (Hailey): https://www.figma.com/file/oMIZYwEAKulC3sSH80bxzx/Program-page?node-id=0%3A1
 
 ## 10. <a name="design"/>General Design System
-- color, font, logo, etc will be described here
+- Font: 'Montserrat',sans-serif
+- Color: Dark Gray (#615e5e)/ Light Gray (#797878)/ Black (#1c1818)/ Yellow (#F5B944)/ Accent color (#f58026)
