@@ -9,6 +9,7 @@ const bodyParser = require('body-parser');
 const programModel = require("./models/programs");
 const infoModel = require("./models/home");
 const courseModel = require("./models/student");
+const studentModel = require("./models/studentDB");
 
 //create express app object
 const app = express();
@@ -79,7 +80,8 @@ app.get("/updatedstudent", (req,res) => {
     res.render("updatedstudent", {
         title:"Student Info",
         headingInfo: "Student Info Page",
-        dynamicContent: "something"
+        dynamicContent: "something",
+        student: studentModel.getallStudent()
     });
 })
 
