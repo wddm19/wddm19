@@ -354,7 +354,8 @@ footer {
   .prg-p {
     font-size: .8em;
     text-transform: uppercase;
-    color: #615e5e;
+    color: #615e5e
+    margin-bottom: 2em;
   }
   
   .divider {
