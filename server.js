@@ -74,6 +74,15 @@ app.get("/student", (req,res) => {
     });
 })
 
+app.get("/updatedstudent", (req,res) => {
+    
+    res.render("updatedstudent", {
+        title:"Student Info",
+        headingInfo: "Student Info Page",
+        dynamicContent: "something"
+    });
+})
+
 //Create a Web server
 const PORT = 3000;
 app.listen(PORT,() => {
