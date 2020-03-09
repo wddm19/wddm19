@@ -672,16 +672,6 @@ footer {
   background-image: url("https://i.pinimg.com/564x/83/af/77/83af773ff7ec66354e5b18863667c0b3.jpg");
 }
 
-/* Grades */
-
-.grads-profile {
-  display: none;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; */
-}
-
-
-
 
 
   @media screen and (min-width: 41.25em) {
