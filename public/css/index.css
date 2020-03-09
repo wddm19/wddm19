@@ -1149,48 +1149,85 @@ footer {
   }
 
   /* Student-detailed page */
-  .resume-header {
-    height: 40px;
-    width: 100%;
-    background-color: #ffcccc;
-  }
-  
-  .resume-footer {
-    height: 50px;
-    width: 100%;
-    background-color: #ffcccc;
-    clear: both;
-    position: relative;
-  }
-  
-  .left {
-    height: 1000px;
-    width: 45px;
-    background-color: #e0eeee;
-    float: left;
-    position: fixed;
-  }
-  
   .right {
-    height: 1000px;
-    width: 45px;
-    background-color: #e0eeee;
-    float: right;
-    position: inherit;
+    background-color: #fff;
+    padding: 0 1em;
   }
-  
-  .stuff {
-    display: inline-block;
-    margin-top: 6px;
-    margin-left: 55px;
-    width: 75%;
-    height: 1000px;
+
+  .left {
+    background-color: #3d3e42;
+    padding: 0 1em;
+    color: #fff
   }
-  
-  .resume-head {
+
+  .resume-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-grid ul {
+    list-style: none;
+  }
+
+  .contact-info li {
     font-size: 1.3em;
   }
   
+  .resume-head, .bold {
+    font-size: 1.3em;
+    color: #F5B944;
+  }
+
+  .picture-resume {
+    width: 220px;
+    height: 220px;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 0px;
+    display: table;
+    position: relative;
+    vertical-align: middle;
+  }
+  
+  .skill-percentage {
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .skill-percentage::after {
+    content: "";
+    width: 100%;
+    height: 6px;
+    background: #4a4e51;
+    display: block;
+    margin-top: 3px;
+  }
+  .skill-percentage::before {
+    content: "";
+    height: 6px;
+    background: #F5B944;
+    position: absolute;
+    margin-top: 3px;
+    bottom: 0;
+  }
+  .skill-percentage:nth-child(1)::before {
+    width: 80%;
+    animation: skill_1 0.6s ease;
+  }
+  
+  @keyframes skill_1 {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 80%;
+    }
+  }
+
   .resume-name {
     font-family: Sacramento;
     float: right;

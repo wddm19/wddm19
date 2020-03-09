@@ -15,9 +15,12 @@ const student =
             detailsURL: `/maftuna`,
             interest: `Travel`, 
             education: `Humber College`,
-            experience: `Worked as a graphic designer for 3years`,
+            experience: `Worked as a graphic designer for 3 years`,
             git: `https://github.com/maftuna-cs`,
-            website: `https://github.com/maftuna-cs`
+            website: `https://github.com/maftuna-cs`,
+            call: `647-111-1111`,
+            mail: `kh.maftu@gmail.com`,
+            location: `Toronto,CA`
         });
     
         this.fakeDB.push({
@@ -29,10 +32,12 @@ const student =
             detailsURL: `/clara`,
             interest: `Photography`, 
             education: `Humber College`,
-            experience: `Worked as a front-end developer for 3years`,
+            experience: `Worked as a front-end developer for 3 years`,
             git: `https://github.com/clarakhast`,
-            website: `https://github.com/clarakhast`
-            
+            website: `https://github.com/clarakhast`,
+            call: `647-111-1111`,
+            mail: `khast.negar@gmail.com`,
+            location: `Toronto,CA`
         });
 
         this.fakeDB.push({
@@ -44,9 +49,12 @@ const student =
             detailsURL: `/hailey`,
             interest: `Drawing`, 
             education: `Humber College`,
-            experience: `Worked as service planner for 1year`,
+            experience: `Worked as service planner for 1 year`,
             git: `https://github.com/haileykoo`,
-            website: `file:///Users/hailey/Desktop/Hailey_Koo-resume.pdf`
+            website: `file:///Users/hailey/Desktop/Hailey_Koo-resume.pdf`,
+            call: `647-111-1111`,
+            mail: `haileykwon8@gmail.com`,
+            location: `Toronto,CA`
         });
     },
     getallStudent()
