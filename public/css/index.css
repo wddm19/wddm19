@@ -1141,7 +1141,7 @@ footer {
     color: #f58026;
   }
 
-  .assignments h2, .blue{
+  .assignments h2, .blue, .profile-extra{
     color: #67a2b9;
   }
 
@@ -1196,28 +1196,34 @@ footer {
     width: 300px;
     border-radius: 10px;
     text-align: center;
-    text-align: center;
+    text-align: center; 
   }
-  .profile-smallimg .profile__image {
+
+  .profile-smallimg h3 {
+    color: #F5B944;
+    font-size: 2em;
+    letter-spacing: .06em;
+  }
+  .profile-smallimg .profile-image {
     margin-top: -40px;
   }
-  .profile-smallimg .profile__image img {
+  .profile-smallimg .profile-image img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     border: 5px solid white;
     box-shadow: 0 0 0 7px #F5B944; /* secondary color */
   }
-  .profile-smallimg .profile__info {
+  .profile-smallimg .profile-info {
     margin: 10px 30px 15px;
   }
-  .profile-smallimg .profile__stats {
+  .profile-smallimg .profile-stats {
     margin: 0 30px 10px;
   }
-  .profile-smallimg .profile__stats:nth-of-type(n+4) {
+  .profile-smallimg .profile-stats:nth-of-type(n+4) {
     display: none;
   }
-  .profile-smallimg .profile__cta a {
+  .profile-smallimg .profile-cta a {
     border-radius: 10px;
   }
   .profile-btn {
