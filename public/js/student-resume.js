@@ -5,6 +5,7 @@
         image: `/img/student.jpg`,
         name: `Clara`,
         lastname: `Khast`,
+        title: `Front-End Developer & UX/UI Designer`,
         description: `I’m a junior front-end developer with a good understanding of web design. I am willing to expand my knowledge in
         web development to become a full-stack developer. I stay updated on all of the technologies associated with this
         industry and have the ability to adhere to all rules and coding standards set forth by management. I also have a
@@ -18,7 +19,8 @@
         image: `/img/Hailey.png`,
         name: `Hailey`,
         lastname: `Koo`,
-        description: `I’m a junior front-end developer with a good understanding of web design. I am willing to expand my knowledge in
+        title: `Front-End Developer & UX/UI Designer`,
+        description: `A new graduate, currently furthering my studies in UI/UX and Front-end development. I am willing to expand my knowledge in
         web development to become a full-stack developer. I stay updated on all of the technologies associated with this
         industry and have the ability to adhere to all rules and coding standards set forth by management. I also have a
         great social and self-management skills which gives me the ability to work both in groups and alone.`,
@@ -31,8 +33,8 @@
         image: `/img/maftuna.png`,
         name: `Maftuna`,
         lastname: `Kh`,
-        description: `I’m a junior front-end developer with a good understanding of web design. I am willing to expand my knowledge in
-        web development to become a full-stack developer. I stay updated on all of the technologies associated with this
+        title: `Web Developer & Graphic Designer`,
+        description: `Experienced graphic designer and web developer with a demonstrated history of working in information technology. I stay updated on all of the technologies associated with this
         industry and have the ability to adhere to all rules and coding standards set forth by management. I also have a
         great social and self-management skills which gives me the ability to work both in groups and alone.`,
         skills: [`UI/UX Design`, `Front-End Development`, `Graphic Design`, `Back-End Development`],
@@ -62,7 +64,7 @@ const getItemsAsHtmlString = student => {
     <div class="intro-container">
         <div class="intro-text">
             <h1>i<span class="green">'</span>m <br>${student.name}<br>${student.lastname}<span class="green">&bull;</span></h1>
-            <p>front-end developer &amp; <br>Web designer</p>
+            <p>${student.title}</p>
         </div>
     </div>
 </section>
