@@ -3,61 +3,52 @@
     {
         id: 100,
         image: `/img/student.jpg`,
-        title: `Clara`,
+        name: `Clara`,
         lastname: `Khast`,
-        credential:'Diploma',
-        code:`10351`,
-        lenght:4,
-        start: `September`,
-        location: `Lakeshore`,
-        status: `Open`,
         description: `I’m a junior front-end developer with a good understanding of web design. I am willing to expand my knowledge in
         web development to become a full-stack developer. I stay updated on all of the technologies associated with this
         industry and have the ability to adhere to all rules and coding standards set forth by management. I also have a
         great social and self-management skills which gives me the ability to work both in groups and alone.`,
         skills: [`UI/UX Design`, `Front-End Development`, `Graphic Design`, `Back-End Development`],
-        career: `In addition to traditional stage, film and television opportunities, graduates of the program qualify to work in a wide range of multimedia including webisodes, virtual reality and gaming videos, as well as voice-overs for cartoons, commercials, narration and audio dialogue replacement (dubbing).`
+        email:`clarakhast@gmail.com`,
+        tel:`647-111-1111`,
     },
     {
         id: 101,
         image: `/img/Hailey.png`,
-        title: `Hailey`,
+        name: `Hailey`,
         lastname: `Koo`,
-        credential:'Advanced Diploma',
-        code:`AN311`,
-        lenght:6,
-        start: `September`,
-        location: `North`,
-        status: `Open`,
-        description: `In Humber’s Animation 3D advanced diploma program, you will develop a well-rounded knowledge base and skillset that includes strong art, animation, modelling and visualization abilities. You will be prepared for the ever-expanding 3D art field with a thorough understanding of the latest 3D digital art technologies in a program developed with the input of industry advisors. Learn to work like the pros do — using the same 3D animation software and tools to render creative thoughts into compelling images and fully-realized design.`,
-        skills: [`Animation`, `Modeling`, `Rigging`, `Lighting`, `Rendering`, `Compositing`],
-        career: `Pour your creative ideas and your technical skills into a dynamic career in the fast-evolving field of 3D animation where your chances to progress are only as limited as your imagination. The rapid advancement in computer technology, combined with skyrocketing global demand for animated entertainment, cable and satellite TV, and the Internet, has led to a surge in career opportunities for those who have the expertise to tell effective stories and create compelling digital characters and worlds in 3D.`
+        description: `I’m a junior front-end developer with a good understanding of web design. I am willing to expand my knowledge in
+        web development to become a full-stack developer. I stay updated on all of the technologies associated with this
+        industry and have the ability to adhere to all rules and coding standards set forth by management. I also have a
+        great social and self-management skills which gives me the ability to work both in groups and alone.`,
+        skills: [`UI/UX Design`, `Front-End Development`, `Graphic Design`, `Back-End Development`],
+        email:`haileykwon8@gmail.com`,
+        tel:`647-111-1111`,
     },
     {
         id:102,
         image: `/img/maftuna.png`,
-        title: `Maftuna`,
+        name: `Maftuna`,
         lastname: `Kh`,
-        credential:'Maftuna',
-        code:`11671`,
-        lenght:2,
-        start: `September`,
-        location: `North`,
-        status: `Open`,
-        description: `Humber's 3D Modelling and Visual Effects Production certificate program focuses on both the conceptual and the technical, as you learn to master visual techniques to bring ideas to life. You will develop skills in modelling, texturing and lighting, as well as in visual effects, compositing and digital cinematography. We employ a teaching process and course structure that requires content created in one course to be used to complete assignments in other courses. This “pipeline” process mirrors that of industry, allowing students to make a seamless transition into a real production environment.`,
-        skills: [`Modelling`, `Texturing`, `Visual effects`, `Compositing`, `Digital cinematography`],
-        career: `Pour your creative ideas and your technical skills into a dynamic career in the fast-evolving field of 3D animation where your chances to progress are only as limited as your imagination. The rapid advancement in computer technology, combined with skyrocketing global demand for animated entertainment, cable and satellite TV, and the Internet, has led to a surge in career opportunities for those who have the expertise to tell effective stories and create compelling digital characters and worlds in 3D.`
+        description: `I’m a junior front-end developer with a good understanding of web design. I am willing to expand my knowledge in
+        web development to become a full-stack developer. I stay updated on all of the technologies associated with this
+        industry and have the ability to adhere to all rules and coding standards set forth by management. I also have a
+        great social and self-management skills which gives me the ability to work both in groups and alone.`,
+        skills: [`UI/UX Design`, `Front-End Development`, `Graphic Design`, `Back-End Development`],
+        email:`kh.maftu@gmail.com`,
+        tel:`647-111-1111`,
     }
 ]
 
 const studentBtn = event => {
     let students;
-    if (document.getElementById("act").checked) {
-        students = student.filter(student => student.title == `Clara`);
-    } else if (document.getElementById("animation").checked) {
-        students =student.filter(student => student.title == `Maftuna`);
-    } else if (document.getElementById("3d").checked) {
-        students = student.filter(student => student.title == `Hailey`);
+    if (document.getElementById("clara").checked) {
+        students = student.filter(student => student.name == `Clara`);
+    } else if (document.getElementById("maftuna").checked) {
+        students =student.filter(student => student.name == `Maftuna`);
+    } else if (document.getElementById("hailey").checked) {
+        students = student.filter(student => student.name == `Hailey`);
     } else {
       return;
     }
@@ -70,7 +61,7 @@ const getItemsAsHtmlString = student => {
     <section id="home">
     <div class="intro-container">
         <div class="intro-text">
-            <h1>i<span class="green">'</span>m <br>${student.title}<br>${student.lastname}<span class="green">&bull;</span></h1>
+            <h1>i<span class="green">'</span>m <br>${student.name}<br>${student.lastname}<span class="green">&bull;</span></h1>
             <p>front-end developer &amp; <br>Web designer</p>
         </div>
     </div>
@@ -171,7 +162,7 @@ const getItemsAsHtmlString = student => {
       <div id="intro">
         <h2>contact</h2>
         <p>I'm available fo freelance. If you have a project that I can help you with or you are interested in working together contact me right now. </p><br>
-        <p>negarkhast@gmail.com <br>Tel: +358-465653673</p>
+        <p>${student.email} <br>Tel: ${student.tel}</p>
       </div>
 
       <form id="contact_form">
@@ -193,7 +184,7 @@ const getItemsAsHtmlString = student => {
 
 const renderItemsFromArray = arr => {
     if (arr.length > 0) {
-        document.getElementById('items').innerHTML = arr.map(getItemsAsHtmlString).join('\n');
+        document.getElementById('student-info').innerHTML = arr.map(getItemsAsHtmlString).join('\n');
     } else {
         return;
     }}
