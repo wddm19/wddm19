@@ -1,54 +1,50 @@
 {{#each student}}
 <h1>Resume</h1>
-  <section class="resume-grid">
-    <div class="right">
-      <h2> {{this.name}}</h2>
-      <img src="{{this.photo}}" alt="student photo" class="picture-resume">
-      <div class="contact-grid">
-        <div class="resume-head">
-          <ul>
-            <li>Call</li>
-            <li>Mail</li>
-            <li>Web</li>
-            <li>Home</li>
-          </ul>
-        </div>
-        <div class="contact-info">
-          <ul>
-            <li>{{this.call}}</li>
-            <li>{{this.mail}}</li>
-            <li>{{this.website}}</li>
-            <li>{{this.location}}</li>
-          </ul>
-        </div>
+<section class="resume-grid">
+  <div class="right">
+    <h2> {{this.name}}</h2>
+    <img src="{{this.photo}}" alt="student photo" class="picture-resume">
+    <div class="contact-grid">
+      <div class="resume-head">
+        <ul>
+          <li>Call</li>
+          <li>Mail</li>
+          <li>Web</li>
+          <li>Home</li>
+        </ul>
       </div>
-      <p><span class="bold">About Me</span> {{this.intro}}</p>
-      <p class="head">If you want to see more works</p>
-      <a href="{{this.git}}">GitHub</a> <br>
-      <a href="{{this.website}}">My Portfoilo website</a>
-    </ul>
+      <div class="contact-info">
+        <ul>
+          <li>{{this.call}}</li>
+          <li>{{this.mail}}</li>
+          <li>{{this.website}}</li>
+          <li>{{this.location}}</li>
+        </ul>
+      </div>
+    </div>
+    <p><span class="bold">About Me</span> {{this.intro}}</p>
+    <p class="head">If you want to see more works</p>
+    <a href="{{this.git}}">GitHub</a> <br>
+    <a href="{{this.website}}">My Portfoilo website</a>
   </div>
 
   <div class="left">
     <p class="resume-head">Interests</p>
-      <ul>
-        <li>{{this.interest}}</li>
-      </ul>
-      <p class="resume-head">Skills</p>
-      <ul>
-        <li class="skill-percentage">{{this.skills}}</li>
-      </ul>
-      <p class="resume-head">Education</p>
-      <ul>
-          <li>{{this.education}}</li>
-      </ul>
-      <p class="resume-head">Experience</p>
-      <ul>
-        <li>{{this.experience}}</li>
-      </ul>
+    <ul>
+      <li>{{this.interest}}</li>
+    </ul>
+    <p class="resume-head">Skills</p>
+    <ul>
+      <li class="skill-percentage">{{this.skills}}</li>
+    </ul>
+    <p class="resume-head">Education</p>
+    <ul>
+        <li>{{this.education}}</li>
+    </ul>
+    <p class="resume-head">Experience</p>
+    <ul>
+      <li>{{this.experience}}</li>
+    </ul>
   </div>
 </section>
 {{/each}}
-<div class="resume-footer">
-  <h2 class="resume-name">{{this.name}}</h2>
-</div>
