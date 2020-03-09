@@ -45,11 +45,11 @@
 
 const studentBtn = event => {
     let students;
-    if (document.getElementById("clara").checked) {
+    if (window.location.pathname.slice(2,6) == `clara`) {
         students = student.filter(student => student.name == `Clara`);
-    } else if (document.getElementById("maftuna").checked) {
+    } else if (window.location.pathname.slice(2,8) == `maftuna`) {
         students =student.filter(student => student.name == `Maftuna`);
-    } else if (document.getElementById("hailey").checked) {
+    } else if (window.location.pathname.slice(2,7) == `hailey`) {
         students = student.filter(student => student.name == `Hailey`);
     } else {
       return;
