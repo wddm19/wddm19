@@ -45,11 +45,12 @@
 
 const studentBtn = event => {
     let students;
-    if (window.location.pathname.slice(2,6) == `clara`) {
+      console.log(window.location.pathname)
+    if (window.location.pathname.slice(1,6) == `clara`) {
         students = student.filter(student => student.name == `Clara`);
-    } else if (window.location.pathname.slice(2,8) == `maftuna`) {
+    } else if (window.location.pathname.slice(1,8) == `maftuna`) {
         students =student.filter(student => student.name == `Maftuna`);
-    } else if (window.location.pathname.slice(2,7) == `hailey`) {
+    } else if (window.location.pathname.slice(1,7) == `hailey`) {
         students = student.filter(student => student.name == `Hailey`);
     } else {
       return;
@@ -192,6 +193,7 @@ const renderItemsFromArray = arr => {
     }}
 
 window.addEventListener('load', () => {
+  console.log('page loaded')
     document.getElementById('student').addEventListener('click', studentBtn);
     renderItemsFromArray(student);
 });
