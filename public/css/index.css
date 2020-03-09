@@ -974,6 +974,7 @@ footer {
     grid-template-columns: 1fr;
     grid-gap: 10px;
     text-align: center;
+    margin: 0 auto;
   }
   .profile-smallimg .profile__image {
     margin-top: -40px;
@@ -1308,14 +1309,14 @@ footer {
   .skill-percentage::after {
     content: "";
     width: 100%;
-    height: 6px;
+    height: 1em;
     background: #4a4e51;
     display: block;
     margin-top: 3px;
   }
   .skill-percentage::before {
     content: "";
-    height: 6px;
+    height: 1em;
     background: #F5B944;
     position: absolute;
     margin-top: 3px;
@@ -1352,3 +1353,564 @@ footer {
       margin-left: 10px;
     }
   }
+  /* ******************************************************
+  ********************************************************** */
+
+  .intro-container {
+    background: 
+    linear-gradient(rgba(50,65,88,0.5), rgba(50,65,88,0.5)),
+    url(../img/horizon.jpg) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 45em;
+    position: relative;
+}
+
+section#home {
+  z-index: 60;
+}
+
+.intro-text {
+    width: 25em;
+    display: block;
+    color: #ffffff;
+    margin: 0 auto;
+    padding-top:100px;
+}
+
+.intro-text h1{
+    font-family: "Courgette", serif;
+    font-size: 3em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.intro-text p{
+    font-family: "Courgette", serif;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    line-height: 1.5em;
+}
+
+span.green {
+    color: #F5B944;
+}
+
+/*ABOUT SECTION
+---------------------------------------------------------*/
+
+section#about {
+  background: #333B50;
+  width: 30em;
+  position:relative;
+  margin: -8em auto;
+  height: 100% 100%;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5em;
+  font-size: 1.4em;
+  line-height: 2.5;
+  text-transform: capitalize;
+  box-shadow: 1px 4px 25px rgba(47, 46, 46, 0.3);
+  z-index: 79;
+}
+
+.about >.profile .profile-smallimg {
+  box-shadow: none;
+  text-align: center;
+}
+
+.about .profile-smallimg .profile__image img  {
+  box-shadow: none;
+  width: 7em;
+  height: 7em;
+  border: 3px solid #F5B944;
+}
+
+.about-wrapper {
+  border:2px solid #F5B944;
+  padding: 2em;
+}
+
+section#about p {
+  padding-top: 1em;
+  font-size: 15px;
+}
+
+#about input[type="button"] {
+  background: transparent;
+  padding: 15px;
+  border: solid 1px #F5B944;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 50px;
+  cursor: pointer;
+  cursor: hand;
+}
+
+#about input[type="button"]:hover {
+  background-color: #F5B944;
+  
+}
+
+input[type="button"]:active {
+position:relative;
+top: 1px;
+}
+
+input[type="submit"]:active {
+position:relative;
+top: 1px;
+}
+
+input:focus, textarea:focus {
+border:1px solid #97d6eb;
+}
+
+/*SKILLS SECTION
+-----------------------------------------------------------*/
+
+section#skills {
+  padding: 40em 0  0;
+  margin-top: -60em;
+  background : 
+  linear-gradient( rgba(10,17,36,0.45), rgba(10,17,36,0.45)),
+  url(../img/desk-light.jpg) center center no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  height: 100%;
+  font-size: 14px;
+  letter-spacing: 0.05;
+}
+
+section#skill {
+padding: 30em 0 20em 0;
+}
+
+.clearfix:after {
+  content:"";
+  display: table;
+  clear: both;
+}
+
+h3 {
+  font-size: 42px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.5;
+  text-align: center;
+}
+
+.skills p{
+    font-size: 1.8em;
+    text-transform: uppercase;
+    line-height: 0.5em;
+    color: white;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+span.number {
+  color: rgba(190,199,213,0.5);
+  text-align: center;
+}
+
+.skills-list {
+  width: 80%;
+  margin: 0 auto;
+  list-style-type: none;
+  color: white;
+  font-size: 1.2em;
+  padding-top: 2em;
+}
+
+.skills-percentage {
+  height: 1.5em;
+}
+
+.skill-percentage:nth-child(2)::before {
+  width: 50%;
+  animation: skill_2 0.6s ease;
+}
+@keyframes skill_2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+.skill-percentage:nth-child(3)::before {
+  width: 70%;
+  animation: skill_3 0.6s ease;
+}
+
+@keyframes skill_3 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+.skill-percentage:nth-child(4)::before {
+  width: 40%;
+  animation: skill_4 0.6s ease;
+}
+@keyframes skill_4 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+.skill-percentage:nth-child(5)::before {
+  width: 65%;
+  animation: skill_5 0.6s ease;
+}
+
+@keyframes skill_5 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 65%;
+  }
+}
+
+
+/*PORTFOLIO SECTION
+---------------------------------------------*/
+
+section#portfolio {
+  background-color : #343a4b;
+  background-size: 100% 100%;
+  height: 100% !important;
+  padding: 170px 40px;
+}
+
+ul.img-list {
+list-style-type: none;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+
+ul.img-list li {
+display: inline-block;
+height: 220px;
+position: relative;
+width: 230px;
+margin: 0px;
+}
+
+span.text-content {
+background: rgba(0,0,0,0.8);
+color: white;
+font-size: 12px;
+text-transform: uppercase;
+text-shadow: 1px 1px #000000;
+cursor: pointer;
+display: table;
+height: 50px;
+left: 0;
+position: absolute;
+bottom: 0;
+width: 100%;
+opacity: 0;
+-webkit-transition: opacity 500ms;
+-moz-transition: opacity 500ms;
+-o-transition: opacity 500ms;
+transition: opacity 500ms;
+}
+
+span.text-content span {
+display: table-cell;
+text-align: center;
+vertical-align: middle;
+}
+
+ul.img-list li:hover span.text-content {
+opacity: 1;
+}
+
+/*TIMELINE
+-------------------------------------------------------*/
+
+
+section#timeline {
+  background : 
+  linear-gradient( rgba(9,19,48,0.7), rgba(9,19,48,0.7)),
+  url(../img/horizon.jpg) center center no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 170px 0;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+#timeline ul {
+  background: transparent;
+  padding: 50px 0;
+}
+
+#timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 2px;
+  margin: 0 auto;
+  background: #F5B944;
+}
+
+#timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top:0;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+#timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: transparent;
+}
+
+
+#timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+
+#timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+
+#timeline time {
+  display: block;
+  color: #F5B944;
+  font-size: 16px;
+  margin-bottom: 12px;
+  letter-spacing: 0.05;
+}
+
+#timeline h4.company {
+  font-size: 24px;
+  font-weight: normal;
+  color: #ffffff;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+}
+
+#timeline p.title {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.9;
+  color: #ffffff;
+}
+
+#timeline p.description {
+  font-size: 15px;
+  color: #BEC7D5;
+  line-height: 1.9;
+}
+
+
+/*CONTACT
+---------------------------------------------------*/
+
+section#contact {
+  background: #333B50;
+  width: 960px;
+  position:relative;
+  margin: -120px auto;
+  height: 100% 100%;
+  color: #ffffff;
+  padding: 118px 139px 67px;
+  box-shadow: 1px 4px 25px rgba(47, 46, 46, 0.3);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#contact div#intro {
+  width: 80%;
+}
+
+div#intro p {
+  font-size: 15px;
+  letter-spacing: 0.05;
+  line-height: 1.7;
+}
+
+div#intro h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  padding-bottom: 33px;
+  font-weight: normal;
+}
+
+#contact form {
+  width: 50%;
+}
+
+#contact input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #A0A09F;
+}
+
+#contact input[type="text"], input[type="email"] {
+  width: 320px;
+  padding: 13px 8px;
+  margin-bottom: 12px;
+  color: #2D2D2D;
+}
+
+#contact input[type="text"]#subject {
+  display: block;
+  width: 320px;
+}
+
+#contact textarea {
+  width: 320px;
+  height: 151px;
+  padding: 13px 8px;
+  resize: none;
+  margin-bottom: 12px;
+  color: #2D2D2D;
+}
+
+#contact input[type="submit"] {
+  width: 320px;
+  height: 47px;
+  background: #F5B944;
+  color: #2D2D2D;
+  font-size: 15px;
+  border: none;
+}
+
+
+
+
+/*LAST SECTION
+---------------------------------------------------*/
+section#last-section {
+  background : 
+    linear-gradient( rgba(10,17,36,0.7), rgba(10,17,36,0.7)),
+    url(../img/orange-mountains.jpg) center center no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 100%;
+    padding-top: 740px;
+    margin-top: -547px;
+}
+
+
+
+.student-btn {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #F5B944;
+  text-align: center;
+  padding: 1em;
+  margin: 0;
+  font-weight: bold;
+
+}
+
+input[type=radio]:checked ~ .check {
+  border: none;
+  color: white;
+
+}
+
+input[type=radio]:checked ~ label, input[type=radio] ~ label:hover {
+  color: white;
+  cursor: pointer;
+}
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 600px) {
+
+  .intro-text {
+    padding: 100px 50px;
+    position: relative;
+  }
+
+
+section#last-section {
+  padding: 0;
+  margin:0;
+  height: 150px;
+
+}
+
+footer {
+  padding: 40px 20px;
+  font-size: 13px;
+}
+
+}
+
+@media screen and (max-width: 64em){
+  .intro-text{
+    padding:0;
+  }
+
+  .intro-text p, .intro-text h1 {
+    padding:1em;
+    margin: 0;
+  }
+  section#about {
+    width: 100%;
+    margin: 0;
+    padding:0; 
+   }
+
+   .skills p {
+     line-height: 1.5em;
+   }
+
+   #timeline ul li:nth-child(odd) div, #timeline ul li:nth-child(even) div {
+     left: 0;
+   }
+
+   #timeline ul li {
+     margin: 1em 0.5em;
+   }
+
+   #timeline p.description {
+     padding-right: 2em;
+   }
+
+   section#contact {
+     display: block;
+     padding: 0;
+     width: 100%;
+   }
+
+   #contact div#intro {
+     width: 100%;
+     padding: 1em;
+   }
+
+   #contact form {
+     width: 100%;
+     padding: 1em;
+   }
+
+}
