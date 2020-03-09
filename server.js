@@ -85,6 +85,36 @@ app.get("/updatedstudent", (req,res) => {
     });
 })
 
+app.get("/hailey", (req,res) => {
+    
+    res.render("hailey", {
+        title:"Hailey Info",
+        headingInfo: "Hailey Info Page",
+        dynamicContent: "something",
+        student: studentModel.getallStudent()
+    });
+})
+
+app.get("/maftuna", (req,res) => {
+    
+    res.render("maftuna", {
+        title:"Maftuna Info",
+        headingInfo: "Maftuna Info Page",
+        dynamicContent: "something",
+        student: studentModel.getallStudent()
+    });
+})
+
+app.get("/clara", (req,res) => {
+    
+    res.render("clara", {
+        title:"Clara Info",
+        headingInfo: "Clara Info Page",
+        dynamicContent: "something",
+        student: studentModel.getallStudent()
+    });
+})
+
 //Create a Web server
 const PORT = 3000;
 app.listen(PORT,() => {
