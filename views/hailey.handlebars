@@ -1,0 +1,32 @@
+<div class="resume-header"></div>
+<div class="left"></div>
+<div class="stuff">
+    {{#each student}}
+  <h1>Resume</h1>
+  <h2> {{this.name}}</h2>
+  <p class="resume-head">Interests</p>
+  <ul>
+    <li>{{this.interest}}</li>
+  </ul>
+  <p class="head">Skills</p>
+  <ul>
+    <li>{{this.skills}}</li>
+  </ul>
+  <p class="head">Education</p>
+  <ul>
+      <li>{{this.education}}</li>
+  </ul>
+  <p class="head">Experience</p>
+  <ul>
+    <li>{{this.experience}}</li>
+  </ul>
+  <p class="head">If you want to see more works</p>
+  <a href="{{this.git}}">GitHub</a> <br>
+  <a href="{{this.website}}">My Portfoilo website</a>
+</ul>
+{{/each}}
+</div>
+<div class="right"></div>
+<div class="resume-footer">
+  <h2 class="resume-name">{{this.name}}</h2>
+</div>
