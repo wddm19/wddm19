@@ -1,26 +1,37 @@
 <img src="/img/program-title.png" class="title">
 
 {{!-- Btn to select program --}}
-{{!-- <div class="program-btn">
+<ul class="program-btn">
     <form id="program">
-    <label>Programs</label> <br>
-    <input type="radio" name="program" id="act" class="program_btn" value="act">
-    <label for="act">Acting for Film and Television</label><br>
-    <input type="radio" name="program" id="animation" class="program_btn" value="animation">
-    <label for="animation">Animation - 3D</label><br>
-    <input type="radio" name="program" id="3d" class="program_btn" value="3d">
-    <label for="3d">3D Modelling and Visual Effects Production</label><br>
+    <label class="program-btn-title">Programs</label> <br>
+    <li class="program-btn-list">
+        <input type="radio" name="program" id="act" class="program_btn" value="act">
+        <label for="act">Acting for Film and Television</label><br>
+        <div class="check"></div>
+    </li>
+    <li class="program-btn-list">
+        <input type="radio" name="program" id="animation" class="program_btn" value="animation">
+        <label for="animation">Animation - 3D</label><br>
+        <div class="check"><div class="inside"></div></div>
+    </li>
+    <li class="program-btn-list">
+        <input type="radio" name="program" id="3d" class="program_btn" value="3d">
+        <label for="3d">3D Modelling and Visual Effects Production</label><br>
+        <div class="check"><div class="inside"></div></div>
+    </li>
     </form>
-</div> --}}
+</ul>
 
-<div class="options-container">
+{{!-- <div class="options-container">
     <button class="options-drpdown">FULL TIME PROGRAMS</button>
     <button class="options-drpdown">PART TIME PROGRAMS</button>
     <button class="options-drpdown">TRANSFER OPTIONS</button>
     <button class="options-drpdown">CONTINUING EDUCATION</button>
-</div>
+</div> --}}
+
+<section id="items"></section>
     
-{{#each programs}}
+{{!-- {{#each programs}}
 <img src="{{this.image}}" class="program-img">
  <div class="program-title-container">
      <h1 class="program-title">{{this.title}}</h1>
@@ -67,5 +78,7 @@
     </div>
 </section>
 
-{{/each}}
+{{/each}} --}}
 </section>
+
+<script src="/js/program-search.js"></script>
