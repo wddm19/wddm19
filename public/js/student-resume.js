@@ -45,11 +45,12 @@
 
 const studentBtn = event => {
     let students;
-    if (document.getElementById("clara").checked) {
+      console.log(window.location.pathname)
+    if (window.location.pathname.slice(1,6) == `clara`) {
         students = student.filter(student => student.name == `Clara`);
-    } else if (document.getElementById("maftuna").checked) {
+    } else if (window.location.pathname.slice(1,8) == `maftuna`) {
         students =student.filter(student => student.name == `Maftuna`);
-    } else if (document.getElementById("hailey").checked) {
+    } else if (window.location.pathname.slice(1,7) == `hailey`) {
         students = student.filter(student => student.name == `Hailey`);
     } else {
       return;
@@ -192,6 +193,7 @@ const renderItemsFromArray = arr => {
     }}
 
 window.addEventListener('load', () => {
+  console.log('page loaded')
     document.getElementById('student').addEventListener('click', studentBtn);
     renderItemsFromArray(student);
 });

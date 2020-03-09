@@ -1,50 +1,129 @@
-{{#each student}}
-<h1>Resume</h1>
-<section class="resume-grid">
-  <div class="right">
-    <h2> {{this.name}}</h2>
-    <img src="{{this.photo}}" alt="student photo" class="picture-resume">
-    <div class="contact-grid">
-      <div class="resume-head">
-        <ul>
-          <li>Call</li>
-          <li>Mail</li>
-          <li>Web</li>
-          <li>Home</li>
-        </ul>
-      </div>
-      <div class="contact-info">
-        <ul>
-          <li>{{this.call}}</li>
-          <li>{{this.mail}}</li>
-          <li>{{this.website}}</li>
-          <li>{{this.location}}</li>
-        </ul>
-      </div>
+<section id="home">
+    <div class="intro-container">
+        <div class="intro-text">
+            <h1>i<span class="green">'</span>m <br>{{student.name}}<br>{{student.lastname}}<span class="green">&bull;</span></h1>
+            <p>{{student.title}}</p>
+        </div>
     </div>
-    <p><span class="bold">About Me</span> {{this.intro}}</p>
-    <p class="head">If you want to see more works</p>
-    <a href="{{this.git}}">GitHub</a> <br>
-    <a href="{{this.website}}">My Portfoilo website</a>
-  </div>
-
-  <div class="left">
-    <p class="resume-head">Interests</p>
-    <ul>
-      <li>{{this.interest}}</li>
-    </ul>
-    <p class="resume-head">Skills</p>
-    <ul>
-      <li class="skill-percentage">{{this.skills}}</li>
-    </ul>
-    <p class="resume-head">Education</p>
-    <ul>
-        <li>{{this.education}}</li>
-    </ul>
-    <p class="resume-head">Experience</p>
-    <ul>
-      <li>{{this.experience}}</li>
-    </ul>
-  </div>
 </section>
-{{/each}}
+
+<section id="about" class="about">
+<div class="about-wrapper">
+<div class="profile-smallimg"><div class="profile__image"><img src="{{student.photo}}"></div></div>
+
+    <p>{{student.description}} </p>
+    <p>{{student.location}}</p>
+    <p>{{student.education}}</p>
+    <p>{{student.intereste}}</p>
+    <input type="button" value="Download resume">
+    </div>
+</section>
+
+<section id="skills" class="clearfix">
+    <section id="skill" class="skills">
+        <h3><span class="number">01</span> my skills</h3>
+        <p>My knowledge level in web development</p>
+    
+      <ul class="skills-list">
+      <li class="skill-percentage">{{student.skills.[0]}}</li>
+      <li class="skill-percentage">{{student.skills.[1]}}</li>
+      <li class="skill-percentage">{{student.skills.[2]}}</li>
+      <li class="skill-percentage">{{student.skills.[3]}}</li>
+    </ul>
+
+    </section>
+</section>
+
+<section id="portfolio" class="skills">
+    <h3><span class="number">02</span> portfolio</h3>
+    <p>some of my projects</p>
+
+    <ul class="img-list">
+        <li>
+            <a href="{{student.git}}" target="_blank">
+                <img src="../img/1.jpg" width="230" height="220" />
+                <span class="text-content"><span>Travel Blog</span></span>
+            </a>
+        </li>
+
+        <li>
+            <a href="{{student.git}}" target="_blank">
+                <img src="../img/3.jpg" width="230" height="220" />
+                <span class="text-content"><span>E-Commerce</span></span>
+            </a>
+        </li>
+
+        <li>
+            <a href="{{student.git}}" target="_blank">
+                <img src="../img/student.jpg" width="230" height="220" />
+                <span class="text-content"><span>WebStore</span></span>
+            </a>
+        </li>
+
+        <li>
+            <a href="{{student.git}}" target="_blank">
+                <img src="../img/7.jpg" width="230" height="220" />
+                <span class="text-content"><span>Profit Calculator</span></span>
+            </a>
+        </li>
+
+
+    </ul>
+</section>
+
+<section id="timeline">
+      <h3><span class="number">03</span> Experience</h3>
+      <ul>
+        <li>
+          <div>
+            <time>MAY-SEP 2014</time>
+            <h4 class="company">KTE.CO</h4> 
+            <p class="title">Frontend Developer</p>
+            <p class="description">During my internship, I had a chance to learn about some of the most popular web technologies and develop functional websites based on usability, as a part of team. I was able to achieve a proficient understanding of web markup (HTML5 & CSS3) , client-side scripting and JavaScript frameworks (jQuery).</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>MAY-SEP 2015</time>
+            <h4 class="company">KTE.CO</h4> 
+            <p class="title">Web Designer and Frontend Developer</p>
+            <p class="description">I was introduced to web designing during this internship and I was able to design a webpage layout, edit and write some of the contents using Photoshop. I was also responsible for assisting with coding and troubleshooting.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>2011 - 2016</time>
+            <h4 class="company">Metropolia Uas</h4> 
+            <p class="title">Student</p>
+            <p class="description">Studying for Bachelor degree of Information Technology. Through my studies and personal projects, I had the opportunity of learning some of the most popular web technologies.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <div id="intro">
+        <h2>contact</h2>
+        <p>I'm available fo freelance. If you have a project that I can help you with or you are interested in working together contact me right now. </p><br>
+        <p>{{student.mail}} <br>Tel: {{student.call}}</p>
+      </div>
+
+      <form id="contact_form">
+        <input type="text" placeholder="Name" id="name" name="name">
+        <input type="email" placeholder="Email" name="email" id="email">
+        <input type="text" placeholder="Subject" id="subject" name="subject"> 
+        <textarea placeholder="Message" name="message" id="message"></textarea>
+        <input type="submit" value="Send" id='send_message'>
+        </p>
+      </form>
+    </section>
+
+    <section id="last-section">
+      <div></div>
+    </section>
+
+
+
+       
+
+  
