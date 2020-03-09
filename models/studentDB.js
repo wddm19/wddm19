@@ -10,7 +10,7 @@ const student =
             name: `Maftuna`,
             program: `WDDM-f19`,
             photo:'../img/maftuna.png',
-            intro:`Experienced graphic designer and web developer with a demonstrated history of woeking in information technology.`,
+            intro:`Experienced graphic designer and web developer with a demonstrated history of working in information technology.`,
             skills: `Web Design with HTML & CSS`,
             detailsURL: `/maftuna`,
             interest: `Travel`, 
