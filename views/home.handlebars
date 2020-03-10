@@ -18,12 +18,12 @@
       <p>LET'S DESIGN YOUR FUTURE WHERE YOUR CREATIVITY COMES TO LIFE</p>
     </div>
     <a href="#">
-        <button class="heading-btn">Student Info</button>
-        <button class="heading-btn">Student Works</button>
-      </a>
+      <button class="heading-btn">Student Info</button>
+      <button class="heading-btn">Student Works</button>
+    </a>
   </section>
 
-    {{!-- <section>
+  {{!-- <section>
     <div class="achive">
       <a href="#">
         <p>
@@ -35,7 +35,7 @@
 
   <section>
     <div class="gallery">
-    <div class="divider"></div>
+      <div class="divider"></div>
       <h2>
         <span class="gallery-title">Get Inspired by</span>
         <br>
@@ -51,8 +51,8 @@
     </div>
   </section>
 
-   <section>
-      <div class="fixed-icon"><i class="fas fa-comment-dots fa-3x"></i></div>
+  <section>
+    <div class="fixed-icon"><i class="fas fa-comment-dots fa-3x"></i></div>
   </section>
 
   <section class="prg">
@@ -60,66 +60,20 @@
     <h2 class="prg-title">Areas of Study</h2>
 
 
-
     <div class="prg-list">
+      {{#each prgList}}
+      <div>
+        <a href="{{this.prgLink}}">
+          <img src="{{this.iconURL}}" class="prg-icon">
+          <p class="prg-p">{{this.prgType}}</p>
+        </a>
+      </div>
+      {{/each}}
       <div>
         <a href="#">
-          <img
-            src="https://3ja7kv3vb64k3jba19afwdp1-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/animation_pen.svg"
-            class="prg-icon">
-          <p class="prg-p">Arts</p>
+          <button class="prg-btn">See in Detail <i class="fas fa-arrow-circle-right"></i></button>
         </a>
       </div>
-
-      <div>
-        <a href="#">
-          <img
-            src="https://3ja7kv3vb64k3jba19afwdp1-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/photography_digital-imaging.svg"
-            class="prg-icon">
-          <p class="prg-p">Visual Designs</p>
-        </a>
-      </div>
-
-      <div>
-        <a href="#"><img
-            src="https://3ja7kv3vb64k3jba19afwdp1-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/gameart-cube.svg"
-            class="prg-icon">
-          <p class="prg-p">3D Animation</p>
-        </a>
-      </div>
-
-      <div>
-        <a href="#"><img
-            src="https://3ja7kv3vb64k3jba19afwdp1-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/photography_cinematography.svg"
-            class="prg-icon">
-          <p class="prg-p">Media Production</p>
-        </a>
-      </div>
-
-
-      <div>
-        <a href="#">
-          <img
-            src="https://3ja7kv3vb64k3jba19afwdp1-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/interiordesign_cad.svg"
-            class="prg-icon">
-          <p class="prg-p">Web and Interactive</p>
-        </a>
-      </div>
-
-      <div>
-        <a href="#"><img
-            src="https://3ja7kv3vb64k3jba19afwdp1-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/graphicdesign_document.svg"
-            class="prg-icon">
-          <p class="prg-p">Journalism</p>
-        </a>
-      </div>
-    </div>
-
-    <div>
-      <a href="#">
-        <button class="prg-btn">See in Detail <i class="fas fa-arrow-circle-right"></i></button>
-      </a>
-    </div>
   </section>
 
   <section>
@@ -250,81 +204,22 @@
   </section>
 
 
-  {{!-- <section class="box-container">
-            {{#each info}}
-            <div class="box">
-                <img class="box-img" src="{{this.imgURL}} " alt="{{this.title}}">
-                <h2>
-                    {{this.title}}
-                    <div class="style-under"></div>
-                </h2>
-                <p>{{this.description}}</p>
-                <a href="{{this.link}}">
-                    <div class="box-btn">
-                        <div class="box-btn--txt">Learn More</div>
-                    </div>
-                </a>
-            </div>
-            {{/each}}
-   </section> --}}
-
   <section class="box-container">
-
+    {{#each info}}
     <div class="box">
-      <img class="box-img"
-        src="https://images.unsplash.com/photo-1507537509458-b8312d35a233?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-        alt="">
+      <img class="box-img" src="{{this.imgURL}} " alt="{{this.title}}">
       <h2>
-        Future Students
+        {{this.title}}
         <div class="style-under"></div>
       </h2>
-      <p>Explore our full-time and
-        continuing education programs.
-        Find out how a Humber
-        education will help you
-        chart a sure path
-        to your career.</p>
-      <a href="#">
+      <p>{{this.description}}</p>
+      <a href="{{this.link}}">
         <div class="box-btn">
           <div class="box-btn--txt">Learn More</div>
         </div>
       </a>
     </div>
-    <div class="box">
-      <img class="box-img"
-        src="https://images.unsplash.com/photo-1567168544230-d5a9401299a4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
-      <h2>
-        Current Students
-        <div class="style-under"></div>
-      </h2>
-      <p>Take advantage of unique student resources, work-integrated learning, study abroad opportunities and
-        program
-        pathways.</p>
-      <a href="#">
-        <div class="box-btn">
-          <div class="box-btn--txt">Learn More</div>
-        </div>
-      </a>
-    </div>
-
-    <div class="box">
-      <img class="box-img"
-        src="https://images.unsplash.com/photo-1561489422-45de3d015e3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-        alt="">
-      <h2>
-        Careers
-        <div class="style-under"></div>
-
-      </h2>
-      <p>Partner with us – we can help with student work placements and industry research projects. We also deliver
-        training solutions.</p>
-      <a href="#">
-        <div class="box-btn">
-          <div class="box-btn--txt">Learn More</div>
-        </div>
-      </a>
-    </div>
-
+    {{/each}}
   </section>
 
   <script src="/js/home-p.js"></script>

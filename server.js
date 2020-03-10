@@ -7,7 +7,8 @@ const bodyParser = require('body-parser');
 
 // Import DB
 const programModel = require("./models/programs");
-const infoModel = require("./models/home");
+const infoModel = require("./models/home-info");
+const prgListModel = require("./models/home-prog-list");
 const courseModel = require("./models/student");
 const studentModel = require("./models/studentDB");
 
@@ -50,7 +51,8 @@ app.get("/", (req,res) => {
         title:"Home",
         headingInfo: "Home page",
         dynamicContent: "something",
-        info: infoModel.getallInfo()
+        info: infoModel.getallInfo(),
+        prgList: prgListModel.getallPrgList()
 
     });
 })
