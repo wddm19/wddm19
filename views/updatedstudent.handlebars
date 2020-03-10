@@ -1,16 +1,16 @@
 <section class="grid-box">
     {{#each student}}
     <div class="profile-smallimg">
-        <div class="profile__image"><img src="{{this.photo}}"></div>
-        <div class="profile__info">
+        <div class="profile-image"><img src="{{this.photo}}"></div>
+        <div class="profile-info">
             <h3>{{this.name}}</h3>
-            <p class="profile__info__extra"> {{this.program}}</p>
+            <p class="profile-extra"><strong>{{this.program}}</strong></p>
             <p>{{this.intro}}</p>
         </div>
-        <div class="profile__stats">
-            <p class="profile__stats__title">{{this.skill}}</p>
+        <div class="profile-stats">
+            <p class="profile-stats--title">{{this.skill}}</p>
         </div>
-        <div class="profile__cta">
+        <div class="profile-cta">
             <a href="{{this.detailsURL}}" class="profile-btn">See More</a>
         </div>
     </div>

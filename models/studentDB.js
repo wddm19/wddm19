@@ -10,7 +10,7 @@ const student =
             name: `Maftuna`,
             program: `WDDM-f19`,
             photo:'../img/maftuna.png',
-            intro:`Experienced graphic designer and web developer with a demonstrated history of working in information technology.`,
+            intro:`Experienced Graphic & UI designer with a demonstrated history of working in information technology.`,
             detailsURL: `/maftuna`,
             interest: `Travel`, 
             education: `Humber College`,
@@ -21,8 +21,9 @@ const student =
             mail: `kh.maftu@gmail.com`,
             location: `Toronto,CA`,
             lastname: `Kh`,
-            title: `Web Developer & Graphic Designer`,
-            description: `Experienced graphic designer and web developer with a demonstrated history of working in information technology. I stay updated on all of the technologies associated with this
+            title: `UI/UX, Graphic Designer & Front-end developer`,
+            description: `Experienced Graphic & UI/UX designer with a demonstrated history of working in Information Technology. Currently expanding my knowledge in Web Design & Development. 
+            I stay updated on all of the technologies associated with this
             industry and have the ability to adhere to all rules and coding standards set forth by management. I also have a
             great social and self-management skills which gives me the ability to work both in groups and alone.`,
             skills: [`UI/UX Design`, `Front-End Development`, `Graphic Design`, `Back-End Development`]

@@ -1182,13 +1182,11 @@ footer {
   /* Updated Studen Page */
   .grid-box{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     margin: 1em 2em;
   }
 
   .profile-smallimg {
-    /* background: var(--backgroundColor);
-    color: var(--foregroundColor); */
     box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
     border-radius: 10px;
     transition: .2s ease;
@@ -1231,7 +1229,7 @@ footer {
     text-align: center;
     display: inline-block;
     border: none;
-    padding: 20px 40px;
+    padding: 20px 35px;
     margin-bottom: 1em;
     font-weight: 400;
     font-size: 1.21em;
@@ -1341,7 +1339,7 @@ footer {
     margin-right: 4%;
   }
   
-  @media only screen and (max-width: 430px) {
+  @media screen and (min-width: 41.25em) {
     .left,
     .right {
       display: none;
@@ -1349,6 +1347,12 @@ footer {
     .stuff {
       width: 100%;
       margin-left: 10px;
+    }
+
+    .grid-box{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 1em 2em;
     }
   }
   /* ******************************************************
