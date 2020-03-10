@@ -93,7 +93,7 @@ app.get("/hailey", (req,res) => {
         title:"Hailey Info",
         headingInfo: "Hailey Info Page",
         dynamicContent: "something",
-        student: studentModel.getallStudent()
+        student: studentModel.getStudentData('Hailey')[0]
     });
 })
 
@@ -103,7 +103,7 @@ app.get("/maftuna", (req,res) => {
         title:"Maftuna Info",
         headingInfo: "Maftuna Info Page",
         dynamicContent: "something",
-        student: studentModel.getallStudent()
+        student: studentModel.getStudentData('Maftuna')[0]
     });
 })
 
@@ -113,7 +113,7 @@ app.get("/clara", (req,res) => {
         title:"Clara Info",
         headingInfo: "Clara Info Page",
         dynamicContent: "something",
-        student: studentModel.getallStudent()
+        student: studentModel.getStudentData('Clara')[0]
     });
 })
 
