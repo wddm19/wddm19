@@ -118,6 +118,7 @@ app.get("/clara", (req,res) => {
 })
 
 //Create a Web server
+<<<<<<< HEAD
 // const PORT = 3000;
 // app.listen(PORT,() => {
 //     console.log(`Web server is connected.`);
@@ -128,3 +129,8 @@ app.listen(PORT , ()=>{
 
     console.log(`Web Server is up and running`);
 })
+=======
+http.listen(process.env.PORT || 3000, function(){
+    console.log('listening on', http.address().port);
+  });
+>>>>>>> bdcc0162c8e6f130448fe50098cdffcdd5dd4773
