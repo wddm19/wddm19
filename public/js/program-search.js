@@ -97,7 +97,7 @@ const getItemsAsHtmlString = program => {
    
        <div>
            <h3 class="program-about-title">Skills</h3>
-           <p>Throughout this program you will develop the following skills:{{this.skills}}</p>
+           <p>Throughout this program you will develop the following skills:${program.skills}</p>
        </div>
    
        <div>
